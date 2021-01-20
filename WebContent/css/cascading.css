@@ -1,0 +1,267 @@
+@charset "ISO-8859-1";
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: red;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+body
+{
+	background-image: url("");
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: new time roman;
+}
+h1{
+	font-size: 40px;
+	color: white;
+	margin-top: 250px;
+}
+p{
+	font-size: 17px;
+	color: white;
+}
+h3{
+	font-size: 25px;
+	color: white;
+	}
+.glyphicon-pencil
+{
+	font-size: 35px;
+	color: white;
+	margin-top: 20px;
+	float: right;
+}
+.col-md-5{
+	margin-top: 80px;
+	box-shadow:-1px 1px 60px 10px black;
+	background: rgba(0,0,0,0.4); 
+}
+.label{
+	font-weight: normal;
+	margin-top: 15px;
+	color: white;
+	font-size: 19px;
+}
+.form-control{
+	background: transparent;
+	border-radius: 0px;
+	border-bottom: 1px solid white;
+	border: 0px;
+	font-size:18px;
+	margin-top: 15px;height: 40px;
+	color: white;
+}
+.textarea{
+	margin-top: 80px;
+	box-shadow:-1px 1px 60px 30px black;
+	background: rgba(0,0,0,0.6);
+	background: transparent;
+	color:white;
+	border-bottom: 1px solid white;
+	border: 0px;
+	font-size:18px; 
+	
+}
+
+
+
+
+
+
+
+
+
+body, html{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: 'Sniglet', cursive;
+}
+h1{
+	font-weight: normal;
+	font-size: 4em;
+	font-family: 'Raleway', sans-serif;
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 500px;
+	color: #F90;
+	text-align: center;
+
+}
+
+/* Animation */
+@-webkit-keyframes myfirst
+{
+	0% {margin-left: -235px}
+	60% {margin-left: 100%;}
+	100% {margin-left: 100%;}
+}
+
+/* Animation */
+@keyframes myfirst
+{
+	0% {margin-left: -235px}
+	50% {margin-left: 100%;}
+	100% {margin-left: 100%;}
+}
+
+.fish{
+	background-image: url('/kidssummercamp/images/fish.png');
+	width: 235px;
+	height: 104px;
+	margin-left: -235px;
+	position: absolute;	
+	animation: myfirst 24s;
+	-webkit-animation: myfirst 24s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+}
+
+#fish{
+	top: 120px;
+}
+
+#fish2{
+	top: 260px;
+	animation-delay: 12s;
+	-webkit-animation-delay: 12s;
+}
+
+
+header{
+	height: 160px;
+}
+
+#form{
+	height: 100%;	
+	background-color: #98d4f3;
+	overflow: hidden;
+	position: relative;
+	
+}
+form{
+	margin: 0 auto;
+	width: 500px;
+	padding-top: 40px;
+	color: white;
+	position: relative;
+	
+	
+}
+label, input, textarea{
+	display: block;	
+}
+input, textarea{
+	width: 500px;	
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	padding: 10px;
+	font-family: 'Sniglet', cursive;
+	font-size: 1em;
+	color: #676767;
+	transition: border 0.5s;
+	-webkit-transition: border 0.5s;
+	-moz-transition: border 0.5s;
+	-o-transition: border 0.5s;
+	border: solid 3px #98d4f3;	
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	
+}
+input:focus, textarea:focus{
+	border: solid 3px #77bde0;	
+}
+
+textarea{
+	height: 100px;	
+	resize: none; 
+	overflow: auto;
+}
+input[type="submit"]{
+	background-color: #F90;
+	color: white;
+	height: 50px;
+	cursor: pointer;
+	margin-top: 30px;
+	font-size: 1.29em;
+	font-family: 'Sniglet', cursive;
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+input[type="submit"]:hover{
+	background-color: #e58f0e;
+	
+}
+label{
+	font-size: 1.5em;
+	margin-top: 20px;
+	padding-left: 20px;
+}
+.formgroup, .formgroup-active, .formgroup-error{
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: 10.5%;
+	transition: background-image 0.7s;
+	-webkit-transition: background-image 0.7s;
+	-moz-transition: background-image 0.7s;
+	-o-transition: background-image 0.7s;
+	width: 566px;
+	padding-top: 2px;
+}
+
+.formgroup{
+	background-image: url('/kidssummercamp/images/fish.png');
+}
+.formgroup-active{
+	background-image: url('/kidssummercamp/images/fish.png');
+}
+.formgroup-error{
+	background-image: url('/kidssummercamp/images/fish.png');
+	color: red;
+}
+
+
